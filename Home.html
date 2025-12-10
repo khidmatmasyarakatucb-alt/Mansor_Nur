@@ -1,443 +1,395 @@
-<!doctype html>
-<html lang="ms" class="h-full">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rumah Purnama</title>
-  <script src="/_sdk/element_sdk.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      box-sizing: border-box;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refreshment Redefined - [Your Brand Name] Mineral Water</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-    
-    * {
-      font-family: 'Inter', sans-serif;
-    }
-    
-    .hero-gradient {
-      background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%), 
-                  url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJob3VzZXBhdHRlcm4iIHg9IjAiIHk9IjAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48ZyBvcGFjaXR5PSIwLjEiPjxwYXRoIGQ9Ik01MCAxMDBMNzUgODVWNjBMNTAgNDVMMjUgNjBWODVaIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iMzUiIHk9Ijg1IiB3aWR0aD0iMTIiIGhlaWdodD0iMTUiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iNjMiIHk9Ijg1IiB3aWR0aD0iMTIiIGhlaWdodD0iMTUiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iNDIiIHk9IjY1IiB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjU4IiB5PSI2NSIgd2lkdGg9IjgiIGhlaWdodD0iOCIgZmlsbD0id2hpdGUiLz48L2c+PGcgb3BhY2l0eT0iMC4wOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIwLCA2MCkiPjxwYXRoIGQ9Ik01MCAxMDBMNzUgODVWNjBMNTAgNDVMMjUgNjBWODVaIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iMzUiIHk9Ijg1IiB3aWR0aD0iMTIiIGhlaWdodD0iMTUiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iNjMiIHk9Ijg1IiB3aWR0aD0iMTIiIGhlaWdodD0iMTUiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iNDIiIHk9IjY1IiB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjU4IiB5PSI2NSIgd2lkdGg9IjgiIGhlaWdodD0iOCIgZmlsbD0id2hpdGUiLz48L2c+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2hvdXNlcGF0dGVybikiLz48L3N2Zz4=');
-      background-size: cover;
-      background-position: center;
-      background-blend-mode: overlay;
-    }
-    
-    .card-hover {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .card-hover:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    }
-    
-    .feature-icon {
-      transition: transform 0.3s ease;
-    }
-    
-    .feature-icon:hover {
-      transform: scale(1.1);
-    }
-    
-    .testimonial-card {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
-    
-    .whatsapp-btn {
-      background: #25D366;
-      transition: background 0.3s ease;
-    }
-    
-    .whatsapp-btn:hover {
-      background: #20BA5A;
-    }
-  </style>
-  <style>@view-transition { navigation: auto; }</style>
-  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
- </head>
- <body class="h-full">
-  <div id="main-wrapper" class="w-full h-full overflow-auto"><!-- Hero Section -->
-   <section id="hero" class="hero-gradient text-white py-20 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-     <h1 id="hero-headline" class="text-5xl font-bold mb-6">Rumah Sewa Percutian Terbaik Di Malaysia</h1>
-     <p id="hero-subheadline" class="text-xl mb-8 opacity-90">Homestay berkualiti tinggi di seluruh Semenanjung - Sesuai untuk percutian, kerja &amp; keluarga</p><button id="cta-button" class="bg-white text-purple-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition"> Tempah Sekarang </button>
-    </div>
-   </section><!-- Senarai Rumah Section -->
-   <section class="py-16 px-6 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
-     <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Pilih Homestay Mengikut Negeri</h2>
-     <p class="text-center text-gray-600 mb-12 text-lg">Kami menawarkan penginapan selesa di 4 lokasi strategik</p>
-     <div class="grid md:grid-cols-2 gap-8"><!-- Terengganu Card -->
-      <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
-       <div class="bg-gradient-to-r from-blue-400 to-cyan-500 h-48 flex items-center justify-center"><span class="text-7xl">🏖️</span>
-       </div>
-       <div class="p-6">
-        <h3 class="text-2xl font-bold mb-3 text-gray-800">Terengganu</h3>
-        <p class="text-gray-600 mb-4">Rumah terletak berhampiran pantai yang indah untuk percutian keluarga yang sempurna.</p>
-        <div class="space-y-2 mb-4">
-         <div class="flex items-center text-gray-700"><span class="mr-2">🛏️</span> <span>3 bilik tidur, 2 bilik air</span>
-         </div>
-         <div class="flex items-center text-gray-700"><span class="mr-2">👨‍👩‍👧‍👦</span> <span>Sesuai untuk percutian keluarga</span>
-         </div>
-         <div class="flex items-center text-gray-700"><span class="mr-2">✨</span> <span>Aircond, parking, WiFi</span>
-         </div>
-        </div><button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition"> Lihat Butiran </button>
-       </div>
-      </div><!-- Kedah Card -->
-      <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
-       <div class="bg-gradient-to-r from-emerald-400 to-teal-500 h-48 flex items-center justify-center"><span class="text-7xl">🏙️</span>
-       </div>
-       <div class="p-6">
-        <h3 class="text-2xl font-bold mb-3 text-gray-800">Kedah</h3>
-        <p class="text-gray-600 mb-4">Rumah moden berdekatan bandar Alor Setar, sempurna untuk rombongan besar.</p>
-        <div class="space-y-2 mb-4">
-         <div class="flex items-center text-gray-700"><span class="mr-2">🛏️</span> <span>4 bilik tidur, 3 bilik air</span>
-         </div>
-         <div class="flex items-center text-gray-700"><span class="mr-2">👥</span> <span>Sesuai untuk rombongan / group</span>
-         </div>
-         <div class="flex items-center text-gray-700"><span class="mr-2">✨</span> <span>Dapur lengkap, mesin basuh, TV pintar</span>
-         </div>
-        </div><button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition"> Lihat Butiran </button>
-       </div>
-      </div><!-- Perak Card -->
-      <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
-       <div class="bg-gradient-to-r from-amber-400 to-orange-500 h-48 flex items-center justify-center"><span class="text-7xl">🏡</span>
-       </div>
-       <div class="p-6">
-        <h3 class="text-2xl font-bold mb-3 text-gray-800">Perak</h3>
-        <p class="text-gray-600 mb-4">Rumah taman tenang di Ipoh dengan akses mudah ke tempat pelancongan.</p>
-        <div class="space-y-2 mb-4">
-         <div class="flex items-center text-gray-700"><span class="mr-2">🛏️</span> <span>3 bilik tidur, 2 bilik air</span>
-         </div>
-         <div class="flex items-center text-gray-700"><span class="mr-2">🗺️</span> <span>Akses mudah ke tempat pelancongan</span>
-         </div>
-         <div class="flex items-center text-gray-700"><span class="mr-2">✨</span> <span>WiFi, water heater, ruang kerja</span>
-         </div>
-        </div><button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition"> Lihat Butiran </button>
-       </div>
-      </div><!-- Kelantan Card -->
-      <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
-       <div class="bg-gradient-to-r from-pink-400 to-rose-500 h-48 flex items-center justify-center"><span class="text-7xl">🏘️</span>
-       </div>
-       <div class="p-6">
-        <h3 class="text-2xl font-bold mb-3 text-gray-800">Kelantan</h3>
-        <p class="text-gray-600 mb-4">Homestay mesra keluarga di Kota Bharu, hanya 10 minit ke Wakaf Che Yeh.</p>
-        <div class="space-y-2 mb-4">
-         <div class="flex items-center text-gray-700"><span class="mr-2">🛏️</span> <span>4 bilik tidur, 2 bilik air</span>
-         </div>
-         <div class="flex items-center text-gray-700"><span class="mr-2">📍</span> <span>10 minit ke Wakaf Che Yeh</span>
-         </div>
-         <div class="flex items-center text-gray-700"><span class="mr-2">✨</span> <span>Parking luas, aircond, ruang tamu besar</span>
-         </div>
-        </div><button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition"> Lihat Butiran </button>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section><!-- Kelebihan Section -->
-   <section class="py-16 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-     <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Mengapa Pilih Rumah Sewa Kami?</h2>
-     <div class="grid md:grid-cols-4 gap-8">
-      <div class="text-center">
-       <div class="feature-icon w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-4xl">💰</span>
-       </div>
-       <h3 class="font-bold text-lg mb-2 text-gray-800">Harga Berpatutan</h3>
-       <p class="text-gray-600">Kadar sewa yang kompetitif dan berbaloi</p>
-      </div>
-      <div class="text-center">
-       <div class="feature-icon w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-4xl">📍</span>
-       </div>
-       <h3 class="font-bold text-lg mb-2 text-gray-800">Lokasi Strategik</h3>
-       <p class="text-gray-600">Dekat dengan kemudahan awam dan tarikan</p>
-      </div>
-      <div class="text-center">
-       <div class="feature-icon w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-4xl">👨‍👩‍👧</span>
-       </div>
-       <h3 class="font-bold text-lg mb-2 text-gray-800">Pelbagai Kegunaan</h3>
-       <p class="text-gray-600">Sesuai untuk percutian, kerja &amp; keluarga</p>
-      </div>
-      <div class="text-center">
-       <div class="feature-icon w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-4xl">⭐</span>
-       </div>
-       <h3 class="font-bold text-lg mb-2 text-gray-800">Diselenggara Profesional</h3>
-       <p class="text-gray-600">Kebersihan dan keselesaan terjamin</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Testimoni Section -->
-   <section class="py-16 px-6 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
-     <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Apa Kata Pelanggan Kami</h2>
-     <p class="text-center text-gray-600 mb-12 text-lg">Pengalaman sebenar dari penyewa yang berpuas hati</p>
-     <div class="grid md:grid-cols-3 gap-8">
-      <div class="testimonial-card">
-       <div class="flex items-center mb-4">
-        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">
-         A
-        </div>
-        <div>
-         <h4 class="font-bold text-gray-800">Ahmad Fitri</h4>
-         <div class="text-yellow-500">
-          ⭐⭐⭐⭐⭐
-         </div>
-        </div>
-       </div>
-       <p class="text-gray-600 italic">"Rumah di Terengganu sangat cantik dan bersih. Dekat dengan pantai, anak-anak suka sangat! Pasti akan datang lagi."</p>
-      </div>
-      <div class="testimonial-card">
-       <div class="flex items-center mb-4">
-        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">
-         S
-        </div>
-        <div>
-         <h4 class="font-bold text-gray-800">Siti Nurhaliza</h4>
-         <div class="text-yellow-500">
-          ⭐⭐⭐⭐⭐
-         </div>
-        </div>
-       </div>
-       <p class="text-gray-600 italic">"Booking untuk rumah di Kedah untuk family gathering. Luas dan selesa, owner pun baik. Highly recommended!"</p>
-      </div>
-      <div class="testimonial-card">
-       <div class="flex items-center mb-4">
-        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">
-         M
-        </div>
-        <div>
-         <h4 class="font-bold text-gray-800">Mohd Haziq</h4>
-         <div class="text-yellow-500">
-          ⭐⭐⭐⭐⭐
-         </div>
-        </div>
-       </div>
-       <p class="text-gray-600 italic">"Rumah di Ipoh sangat cantik dan tenang. WiFi laju, boleh work from home dengan selesa. Memang puas hati!"</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Contact & Booking Section -->
-   <section class="py-16 px-6 bg-white">
-    <div class="max-w-4xl mx-auto">
-     <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Hubungi Kami Sekarang</h2>
-     <p class="text-center text-gray-600 mb-12 text-lg">Tempah homestay idaman anda hari ini</p>
-     <div class="grid md:grid-cols-2 gap-8"><!-- Contact Info -->
-      <div class="bg-purple-50 p-8 rounded-2xl">
-       <h3 class="text-2xl font-bold mb-6 text-gray-800">Maklumat Perhubungan</h3>
-       <div class="space-y-4 mb-6">
-        <div class="flex items-center text-gray-700"><span class="text-2xl mr-3">📱</span>
-         <div>
-          <p class="font-semibold">WhatsApp</p>
-          <p id="contact-phone">+60123456789</p>
-         </div>
-        </div>
-        <div class="flex items-center text-gray-700"><span class="text-2xl mr-3">📧</span>
-         <div>
-          <p class="font-semibold">E-mel</p>
-          <p id="contact-email">homestay@example.com</p>
-         </div>
-        </div>
-        <div class="flex items-center text-gray-700"><span class="text-2xl mr-3">⏰</span>
-         <div>
-          <p class="font-semibold">Waktu Operasi</p>
-          <p>9:00 AM - 10:00 PM (Setiap Hari)</p>
-         </div>
-        </div>
-       </div><button id="whatsapp-btn" class="whatsapp-btn w-full text-white py-4 rounded-lg font-semibold flex items-center justify-center"> <span class="text-2xl mr-2">💬</span> WhatsApp Kami Sekarang </button>
-      </div><!-- Booking Form -->
-      <div class="bg-gray-50 p-8 rounded-2xl">
-       <h3 class="text-2xl font-bold mb-6 text-gray-800">Borang Pertanyaan</h3>
-       <form id="inquiry-form" class="space-y-4">
-        <div><label for="name" class="block text-gray-700 font-semibold mb-2">Nama Penuh</label> <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500" required placeholder="Masukkan nama anda">
-        </div>
-        <div><label for="email" class="block text-gray-700 font-semibold mb-2">E-mel</label> <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500" required placeholder="email@contoh.com">
-        </div>
-        <div><label for="location" class="block text-gray-700 font-semibold mb-2">Lokasi Pilihan</label> <select id="location" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500" required> <option value="">Pilih negeri</option> <option value="terengganu">Terengganu</option> <option value="kedah">Kedah</option> <option value="perak">Perak</option> <option value="kelantan">Kelantan</option> </select>
-        </div>
-        <div><label for="message" class="block text-gray-700 font-semibold mb-2">Mesej</label> <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500" required placeholder="Beritahu kami tarikh check-in &amp; tempoh penginapan"></textarea>
-        </div><button type="submit" class="w-full bg-purple-600 text-white py-4 rounded-lg font-semibold hover:bg-purple-700 transition"> Hantar Pertanyaan </button>
-       </form>
-       <div id="form-message" class="mt-4 p-4 rounded-lg hidden"></div>
-      </div>
-     </div>
-    </div>
-   </section><!-- Footer -->
-   <footer class="bg-gray-900 text-white py-12 px-6">
-    <div class="max-w-6xl mx-auto">
-     <div class="grid md:grid-cols-3 gap-8 mb-8">
-      <div>
-       <h3 class="text-xl font-bold mb-4">Rumah Sewa Homestay</h3>
-       <p class="text-gray-400">Penginapan berkualiti untuk percutian dan perjalanan perniagaan anda di seluruh Malaysia.</p>
-      </div>
-      <div>
-       <h3 class="text-xl font-bold mb-4">Pautan Berguna</h3>
-       <ul class="space-y-2 text-gray-400">
-        <li><a href="#hero" class="hover:text-white transition">Halaman Utama</a></li>
-        <li><a href="#" class="hover:text-white transition">Tentang Kami</a></li>
-        <li><a href="#" class="hover:text-white transition">Syarat &amp; Terma</a></li>
-        <li><a href="#" class="hover:text-white transition">Dasar Privasi</a></li>
-       </ul>
-      </div>
-      <div>
-       <h3 class="text-xl font-bold mb-4">Ikuti Kami</h3>
-       <div class="flex space-x-4"><a href="#" class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition" target="_blank" rel="noopener noreferrer"> <span>f</span> </a> <a href="#" class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition" target="_blank" rel="noopener noreferrer"> <span>📷</span> </a> <a href="#" class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition" target="_blank" rel="noopener noreferrer"> <span>🐦</span> </a>
-       </div>
-      </div>
-     </div>
-     <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-      <p id="footer-copyright">© 2024 Rumah Sewa Homestay. Hak Cipta Terpelihara.</p>
-     </div>
-    </div>
-   </footer>
-  </div>
-  <script>
-    const defaultConfig = {
-      hero_headline: "Rumah Sewa Percutian Terbaik Di Malaysia",
-      hero_subheadline: "Homestay berkualiti tinggi di seluruh Semenanjung - Sesuai untuk percutian, kerja & keluarga",
-      cta_button: "Tempah Sekarang",
-      whatsapp_number: "+60123456789",
-      contact_email: "homestay@example.com",
-      footer_text: "© 2024 Rumah Sewa Homestay. Hak Cipta Terpelihara.",
-      primary_color: "#667eea",
-      secondary_color: "#764ba2",
-      text_color: "#1f2937",
-      button_color: "#7c3aed",
-      accent_color: "#25D366"
-    };
+    <style>
+        /* --- Global Styles --- */
+        :root {
+            --primary-color: #007bff; /* Bright Blue */
+            --secondary-color: #28a745; /* Clean Green */
+            --text-dark: #333;
+            --text-light: #f4f4f4;
+            --background-light: #ffffff;
+            --background-grey: #f8f9fa;
+            --font-family: 'Poppins', sans-serif;
+        }
 
-    async function onConfigChange(config) {
-      const headline = config.hero_headline || defaultConfig.hero_headline;
-      const subheadline = config.hero_subheadline || defaultConfig.hero_subheadline;
-      const ctaButton = config.cta_button || defaultConfig.cta_button;
-      const whatsappNumber = config.whatsapp_number || defaultConfig.whatsapp_number;
-      const contactEmail = config.contact_email || defaultConfig.contact_email;
-      const footerText = config.footer_text || defaultConfig.footer_text;
-      const primaryColor = config.primary_color || defaultConfig.primary_color;
-      const secondaryColor = config.secondary_color || defaultConfig.secondary_color;
-      const textColor = config.text_color || defaultConfig.text_color;
-      const buttonColor = config.button_color || defaultConfig.button_color;
-      const accentColor = config.accent_color || defaultConfig.accent_color;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-      document.getElementById('hero-headline').textContent = headline;
-      document.getElementById('hero-subheadline').textContent = subheadline;
-      document.getElementById('cta-button').textContent = ctaButton;
-      document.getElementById('contact-phone').textContent = whatsappNumber;
-      document.getElementById('contact-email').textContent = contactEmail;
-      document.getElementById('footer-copyright').textContent = footerText;
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--background-light);
+        }
 
-      document.getElementById('hero').style.background = `linear-gradient(135deg, ${primaryColor} 0%, ${secondaryColor} 100%)`;
-      
-      const allHeadings = document.querySelectorAll('h1, h2, h3, h4');
-      allHeadings.forEach(heading => {
-        heading.style.color = textColor;
-      });
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-      const allButtons = document.querySelectorAll('button:not(#whatsapp-btn)');
-      allButtons.forEach(button => {
-        button.style.backgroundColor = buttonColor;
-      });
+        /* --- Buttons --- */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
 
-      document.getElementById('whatsapp-btn').style.backgroundColor = accentColor;
-    }
+        .primary-btn {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            border: 2px solid var(--primary-color);
+        }
 
-    if (window.elementSdk) {
-      window.elementSdk.init({
-        defaultConfig,
-        onConfigChange,
-        mapToCapabilities: (config) => ({
-          recolorables: [
-            {
-              get: () => config.primary_color || defaultConfig.primary_color,
-              set: (value) => {
-                config.primary_color = value;
-                window.elementSdk.setConfig({ primary_color: value });
-              }
-            },
-            {
-              get: () => config.secondary_color || defaultConfig.secondary_color,
-              set: (value) => {
-                config.secondary_color = value;
-                window.elementSdk.setConfig({ secondary_color: value });
-              }
-            },
-            {
-              get: () => config.text_color || defaultConfig.text_color,
-              set: (value) => {
-                config.text_color = value;
-                window.elementSdk.setConfig({ text_color: value });
-              }
-            },
-            {
-              get: () => config.button_color || defaultConfig.button_color,
-              set: (value) => {
-                config.button_color = value;
-                window.elementSdk.setConfig({ button_color: value });
-              }
-            },
-            {
-              get: () => config.accent_color || defaultConfig.accent_color,
-              set: (value) => {
-                config.accent_color = value;
-                window.elementSdk.setConfig({ accent_color: value });
-              }
+        .primary-btn:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .secondary-btn {
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            border: 2px solid var(--secondary-color);
+        }
+
+        .secondary-btn:hover {
+            background-color: #1e7e34;
+            border-color: #1e7e34;
+        }
+
+        /* --- Header/Navigation --- */
+        .main-header {
+            background-color: var(--background-light);
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 400;
+            padding: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            background-color: #e9f5ff; /* Very light blue background */
+            padding: 80px 0;
+        }
+
+        .hero-section .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-image {
+            max-width: 40%;
+            /* Placeholder styling for the image */
+            /* IMPORTANT: Replace the background property below with a real image URL of your bottle */
+            background: #b3d9ff; /* Placeholder background color */
+            min-height: 350px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* --- Features Section --- */
+        .features-section {
+            padding: 60px 0;
+            text-align: center;
+            background-color: var(--background-light);
+        }
+
+        .features-section h3 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--text-dark);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1);
+        }
+
+        .feature-card .icon {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        /* --- Testimonial Section --- */
+        .testimonial-section {
+            background-color: var(--background-grey);
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        blockquote {
+            max-width: 800px;
+            margin: 0 auto;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #555;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        blockquote::before {
+            content: "“";
+            font-size: 4rem;
+            color: var(--primary-color);
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.2;
+        }
+
+        cite {
+            display: block;
+            margin-top: 15px;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1rem;
+        }
+
+        /* --- CTA Section --- */
+        .cta-section {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Override button styles for CTA for contrast */
+        .cta-section .secondary-btn {
+            background-color: #fff;
+            color: var(--primary-color);
+            border-color: #fff;
+        }
+
+        .cta-section .secondary-btn:hover {
+            background-color: var(--background-grey);
+            color: var(--primary-color);
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--text-dark);
+            color: #aaa;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--text-light);
+        }
+
+        /* --- Media Queries for Responsiveness --- */
+        @media (max-width: 768px) {
+            .main-header .container {
+                flex-direction: column;
+                text-align: center;
             }
-          ],
-          borderables: [],
-          fontEditable: undefined,
-          fontSizeable: undefined
-        }),
-        mapToEditPanelValues: (config) => new Map([
-          ["hero_headline", config.hero_headline || defaultConfig.hero_headline],
-          ["hero_subheadline", config.hero_subheadline || defaultConfig.hero_subheadline],
-          ["cta_button", config.cta_button || defaultConfig.cta_button],
-          ["whatsapp_number", config.whatsapp_number || defaultConfig.whatsapp_number],
-          ["contact_email", config.contact_email || defaultConfig.contact_email],
-          ["footer_text", config.footer_text || defaultConfig.footer_text]
-        ])
-      });
-    }
+            
+            nav ul {
+                padding-top: 10px;
+            }
 
-    document.getElementById('cta-button').addEventListener('click', () => {
-      document.querySelector('section:nth-of-type(5)').scrollIntoView({ behavior: 'smooth' });
-    });
+            .hero-section .container {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    document.getElementById('whatsapp-btn').addEventListener('click', () => {
-      const phone = (window.elementSdk ? window.elementSdk.config.whatsapp_number : null) || defaultConfig.whatsapp_number;
-      const cleanPhone = phone.replace(/[^0-9]/g, '');
-      window.open(`https://wa.me/${cleanPhone}`, '_blank', 'noopener,noreferrer');
-    });
+            .hero-content, .hero-image {
+                max-width: 100%;
+            }
+            
+            .hero-image {
+                margin-top: 30px;
+            }
 
-    document.getElementById('inquiry-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const location = document.getElementById('location').value;
-      const message = document.getElementById('message').value;
-      
-      const formMessage = document.getElementById('form-message');
-      formMessage.textContent = 'Terima kasih! Pertanyaan anda telah diterima. Kami akan menghubungi anda tidak lama lagi.';
-      formMessage.className = 'mt-4 p-4 rounded-lg bg-green-100 text-green-800';
-      formMessage.classList.remove('hidden');
-      
-      document.getElementById('inquiry-form').reset();
-      
-      setTimeout(() => {
-        formMessage.classList.add('hidden');
-      }, 5000);
-    });
+            .hero-content h2 {
+                font-size: 2.5rem;
+            }
 
-    const allButtons = document.querySelectorAll('.card-hover button');
-    allButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        document.querySelector('section:nth-of-type(5)').scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9abd6a3c016364ad',t:'MTc2NTM3Njc2Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">[Your Brand Name]</h1>
+            <nav>
+                <ul>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#source">Source</a></li>
+                    <li><a href="#cta">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2>The Purest Sip Nature Intended</h2>
+                <p>Sourced from pristine mountain aquifers, our mineral water delivers essential electrolytes and a refreshing taste you can trust. **Hydration, elevated.**</p>
+                <a href="#cta" class="btn primary-btn">Order Your Case Today</a>
+            </div>
+            <div class="hero-image">
+                [Product Image Placeholder]
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="features-section">
+        <div class="container">
+            <h3>Why Choose [Your Brand Name]?</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <span class="icon">⛰️</span>
+                    <h4>Natural Source</h4>
+                    <p>Directly bottled at the source to preserve its natural purity and mineral content. Unfiltered goodness.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">⚡</span>
+                    <h4>Essential Electrolytes</h4>
+                    <p>Rich in magnesium, calcium, and potassium for optimal body function, recovery, and balance.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🌿</span>
+                    <h4>Perfectly Balanced pH</h4>
+                    <p>A naturally alkaline pH (typically $>\text{7.5}$) that supports your healthy, active lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonial-section">
+        <div class="container">
+            <blockquote>
+                "I've never tasted water this crisp. It truly makes a difference in my daily energy levels. Highly recommend!"
+                <cite>- Sarah L., Fitness Enthusiast</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <h2>Ready for Superior Hydration?</h2>
+            <p>Experience the difference of truly pure mineral water. Available for subscription and one-time purchase.</p>
+            <a href="#" class="btn secondary-btn">Shop Now & Get 10% Off!</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Your Brand Name]. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
 </html>
